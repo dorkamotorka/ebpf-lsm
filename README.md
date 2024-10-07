@@ -27,7 +27,7 @@ By default eBPF program will block execution of the `ls` binary for the user wit
 If you don't have one such, you can create it using:
 
 ```
-sudo useradd restricted-user
+sudo useradd restricted-user --uid 1001
 ```
 
 And then try to run the command `sudo -u restricted-user -- ls` to see the execution is in fact blocked.
